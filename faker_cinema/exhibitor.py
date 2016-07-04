@@ -13,7 +13,7 @@ class ExhibitorProvider(BaseProvider):
             'City', 'Galaxy', 'Palace', 'Magic',
         ),
         (
-            'Cinemas', 'Entertainment', 'Kino', 'Theatres', 'Circuit', 'Cine',
+            'Cinemas', 'Entertainment', 'Kino', 'Theatres', 'Circuit', 'Cine', 'Film',
         ),
     )
     exhibitor_suffixes = (
