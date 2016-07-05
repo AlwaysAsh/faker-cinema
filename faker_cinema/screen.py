@@ -25,12 +25,16 @@ class ScreenProvider(BaseProvider):
     def screen_suffix(cls):
         return cls.random_element(cls.screen_suffixes)
 
+    @classmethod
+    def screen_name(cls):
+        return cls.random_element(cls.screen_names)
+
     def screen(self, number=None):
+        """
+        :param number: The screen number to use (default 1 <= n <= 99)
+        :example: Screen 9 (3D)
+        """
         pattern = self.random_element(self.formats)
         if number is not None:
             pattern = pattern.replace('{{screen_number}}', str(number))
         return self.generator.parse(pattern)
-
-    @classmethod
-    def screen_name(cls):
-        return cls.random_element(cls.screen_names)

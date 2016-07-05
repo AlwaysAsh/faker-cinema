@@ -8,8 +8,9 @@ class CinemaProvider(BaseProvider):
 
     def cinema(self, exhibitor=None):
         """
-        :param exhibitor: The exhibitor to use
-        :return: Royal Kino Sydneyberg
+        :param exhibitor: The exhibitor name to use
+        :type exhibitor: string
+        :example: Royal Kino Sydneyberg
         """
         pattern = self.random_element(self.formats)
         if exhibitor is None:
