@@ -4,10 +4,10 @@ Faker Cinema
 The aim of this package is to provide Cinema Industry specific providers to allow generation of realistic sounding exhibitors,
 cinemas and screens.
 
-Pre-requisities
+Pre-requisites
 ---------------
-* You need (Faker)[https://github.com/joke2k/faker]
-* Then you will need to add this as a provider to your Faker instance
+* You need [Faker](https://github.com/joke2k/faker)
+* Then you will need to add this as a provider to your Faker instance (from [the faker documentation](https://github.com/joke2k/faker#how-to-create-a-provider))
 ```
 from faker import Faker
 from faker_cinema import ExhibitorProvider, CinemaProvider, ScreenProvider
