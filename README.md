@@ -47,6 +47,17 @@ Fake screen name:
 ['Screen 1', 'Screen 2 (IMAX)', 'Theatre 3 (3D)']
 ```
 
+Development & Testing
+---------------------
+* Install the requirements and dev requirements:
+```
+pip install -r requirements.txt -r requirements-dev.txt
+```
+* Run py.test:
+```
+py.test
+```
+
 License
 -------
 Licensed under the MIT License.
