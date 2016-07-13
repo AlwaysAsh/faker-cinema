@@ -25,7 +25,7 @@ setup(
     version=_get_version(),
     install_requires=_get_requirements(),
     package_dir={'faker_cinema': 'faker_cinema'},
-    packages=find_packages(),
+    packages=find_packages(exclude=['*tests*']),
     author='Michael Hinstridge',
     author_email='mhinstridge@gmail.com',
     license='MIT License',
