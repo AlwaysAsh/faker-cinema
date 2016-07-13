@@ -39,3 +39,9 @@ def test_screen_provider_returns_the_screen_number_specified(faker_with_provider
 
     # Because assert str(screen_number) in result is too easy
     assert screen_number == int(re.split('([0-9]+)', result)[1])
+
+
+def test_cpl_provider_returns_a_cpl_name_string(faker_with_providers):
+    result = faker_with_providers.cpl_name()
+
+    assert isinstance(result, six.string_types)

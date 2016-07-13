@@ -10,7 +10,7 @@ Pre-requisites
 * Then you will need to add this as a provider to your Faker instance (from [the faker documentation](https://github.com/joke2k/faker#how-to-create-a-provider))
 ```
 from faker import Faker
-from faker_cinema import ExhibitorProvider, CinemaProvider, ScreenProvider
+from faker_cinema import ExhibitorProvider, CinemaProvider, ScreenProvider, CPLProvider
 
 
 fake = Faker()
@@ -18,6 +18,16 @@ fake = Faker()
 fake.add_provider(ExhibitorProvider)
 fake.add_provider(CinemaProvider)
 fake.add_provider(ScreenProvider)
+fake.add_provider(CPLProvider)
+```
+
+__OR__
+
+* _[New in 0.2.0]_ Just import the FakerCinema factory function:
+```
+from faker_cinema import FakerCinema
+
+fake = FakerCinema()
 ```
 
 Usage
@@ -47,6 +57,12 @@ Fake screen name:
 ['Screen 1', 'Screen 2 (IMAX)', 'Theatre 3 (3D)']
 ```
 
+Fake CPL name:
+```
+>>> fake.cpl_name()
+'Hodgechester_PRO-Pre-ALT_C_CA-CS_CA_VI-71-D-box-HI_2K_MRV_20150228_DTU_SMPTE-3D_VF'
+```
+
 Development & Testing
 ---------------------
 * Install the requirements and dev requirements:
@@ -57,6 +73,11 @@ pip install -r requirements.txt -r requirements-dev.txt
 ```
 py.test
 ```
+
+Changelog
+---------
+* __0.2.0:__ Added CPL provider initial version and added FakerCinema factory function
+* __0.1.0:__ Initial version with Exhibitor, Cinema and Screen functionality
 
 License
 -------
