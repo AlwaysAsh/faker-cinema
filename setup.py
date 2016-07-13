@@ -29,4 +29,5 @@ setup(
     author='Michael Hinstridge',
     author_email='mhinstridge@gmail.com',
     license='MIT License',
+    url='https://github.com/RangerOfFire/faker-cinema',
 )
