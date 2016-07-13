@@ -21,7 +21,8 @@ def _get_requirements():
 
 setup(
     name='faker_cinema',
-    keywords='faker-provider',
+    description='A cinema industry-specific provider for faker',
+    keywords=['testing', 'faker-provider'],
     version=_get_version(),
     install_requires=_get_requirements(),
     package_dir={'faker_cinema': 'faker_cinema'},
@@ -30,4 +31,5 @@ setup(
     author_email='mhinstridge@gmail.com',
     license='MIT License',
     url='https://github.com/RangerOfFire/faker-cinema',
+    download_url='https://github.com/RangerOfFire/faker-cinema/tarball/release/{0}'.format(_get_version())
 )
