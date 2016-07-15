@@ -11,6 +11,6 @@ os:
 notifications:
    email: false
 script:
-  - py.test tests/ --doctest-modules -v --cov cargo --cov-report term-missing -pep8
+  - py.test tests --doctest-modules -v --cov cargo --cov-report term-missing -pep8
 after_success:
   - coveralls
