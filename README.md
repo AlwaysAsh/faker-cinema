@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/RangerOfFire/faker-cinema.svg?branch=master)](https://travis-ci.org/RangerOfFire/faker-cinema)
+[![Coverage Status](https://coveralls.io/repos/github/RangerOfFire/faker-cinema/badge.svg?branch=master)](https://coveralls.io/github/RangerOfFire/faker-cinema?branch=master)
 Faker Cinema
 ============
 
