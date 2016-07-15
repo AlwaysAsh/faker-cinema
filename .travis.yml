@@ -3,10 +3,14 @@ python:
   - "3.2"
   - "3.3"
   - "3.4"
+before_install:
+  - pip install pytest-cov coveralls
 install: "pip install -r requirements.txt && pip install -r requirements-dev.txt"
 os:
  - linux
 notifications:
    email: false
 script:
-  - py.test tests/
+  - py.test tests/ --doctest-modules -v --cov cargo --cov-report term-missing -pep8
+after_success:
+  - coveralls
