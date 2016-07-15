@@ -9,4 +9,4 @@ os:
 notifications:
    email: false
 script:
-  - py.test test_find.py
+  - py.test tests/
