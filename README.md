@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/RangerOfFire/faker-cinema.svg?branch=master)](https://travis-ci.org/RangerOfFire/faker-cinema)
 Faker Cinema
 ============
 
