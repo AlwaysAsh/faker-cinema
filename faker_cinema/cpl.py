@@ -76,12 +76,16 @@ class CPLProvider(BaseProvider):
 
     @classmethod
     def audio_type(cls):
-        return '-'.join(
-            set(
-                [cls.random_element(cls.audio_types)] +
-                [cls.random_element(cls.audio_type_modifiers) for _ in range(cls.random_int(0, 3))]
-            )
+        audio_type_modifiers = '-'.join(
+                set([cls.random_element(cls.audio_type_modifiers) for _ in range(cls.random_int(0, 3))])
         )
+        if audio_type_modifiers:
+            return '-'.join([
+                cls.random_element(cls.audio_types),
+                audio_type_modifiers
+            ])
+        else:
+            return cls.random_element(cls.audio_types)
 
     @classmethod
     def cpl_resolution(cls):
