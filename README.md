@@ -1,3 +1,6 @@
+[![PyPI](https://img.shields.io/pypi/v/faker_cinema.svg)](https://pypi.python.org/pypi/faker_cinema)
+[![PyPI](https://img.shields.io/pypi/l/faker_cinema.svg)](blob/master/LICENSE)
+[![PyPI](https://img.shields.io/pypi/pyversions/faker_cinema.svg)]()
 [![Build Status](https://travis-ci.org/RangerOfFire/faker-cinema.svg?branch=master)](https://travis-ci.org/RangerOfFire/faker-cinema)
 [![Coverage Status](https://coveralls.io/repos/github/RangerOfFire/faker-cinema/badge.svg?branch=master)](https://coveralls.io/github/RangerOfFire/faker-cinema?branch=master)
 Faker Cinema
